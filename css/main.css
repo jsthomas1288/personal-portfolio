@@ -13,8 +13,9 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*
@@ -86,6 +87,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+h1 {
+  font-family: "Alike";
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +265,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
