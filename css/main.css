@@ -91,7 +91,120 @@ textarea {
 h1,
 h2,
 h3 {
-  font-family: "Alike";
+  font-family: "Alike", sans-serif;
+}
+
+/******************************** Base Styles for Mobile Devices ******************************/
+
+header {
+  background-color: #152a3e;
+  color: #eeefda;
+}
+
+nav {
+  padding: 30px 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Alike", sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #eeefda;
+}
+
+#themes {
+  background-color: #cac691;
+  border-radius: 20px;
+  padding: 3px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.intro h1 {
+  padding: 30px 0;
+  margin: 0;
+}
+
+.intro p {
+  padding: 0 30px 40px;
+  margin: 0;
+  text-align: center;
+  width: 275px;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: #cac691;
+  color: #152a3e;
+  margin: 0;
+  padding: 60px 0 60px;
+}
+
+#projects h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px;
+  font-size: 36px;
+}
+
+#projects img {
+  width: 85%;
+  padding: 0 30px 20px;
+}
+
+#projects h3,
+#projects p,
+#projects button {
+  margin: 0 30px 40px;
+}
+
+#projects p {
+  line-height: 30px;
+}
+
+#projects p strong {
+  margin: 0 0 30px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #152a3e;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  height: 45px;
+  font-size: 18px;
+  width: 180px;
 }
 
 /* ==========================================================================
