@@ -29,36 +29,164 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <h1>Hello 👋</h1>
-    <p>
-      my name is Jacob Thomas! <br />
-      I'm a creative and innovative Front End Developer located in the Austin,
-      Texas Metro Area.
-    </p>
+    <div class="intro">
+      <h1>Hello 👋</h1>
+      <p>
+        my name is Jacob Thomas! <br />
+        I'm a creative and innovative Front End Developer located in the Austin,
+        Texas Metro Area.
+      </p>
+    </div>
   </header>
 
   <body>
-    <!-- Add your site or application content here -->
     <div class="wrapper">
-      <div id="about"></div>
+      <div id="projects">
+        <h2>Projects</h2>
+        <div class="sticky-notes">
+          <a href="https://qsibvj.csb.app/" target="_blank">
+            <img src="img/Sticky-Note-UI.png" />
+          </a>
+          <h3>Sticky Note UI</h3>
+          <p>
+            This is a simple sticky note app with a way to filter through the
+            notes using React.
+          </p>
+          <p>
+            <strong>Skills:</strong> Manipulate the DOM, ES6, JSX, Managing Data
+            Flow <br />
+            <strong>Tools:</strong> CodeSandbox, GitHub <br />
+          </p>
+          <a href="https://qsibvj.csb.app/" target="_blank">
+            <button>LIVE PAGE</button>
+          </a>
+        </div>
+
+        <div class="speech-detection">
+          <a
+            href="https://jsthomas1288.github.io/speech-detection/"
+            target="_blank"
+          >
+            <img src="img/Speech-Detection.png" />
+          </a>
+          <h3>Speech Detection</h3>
+          <p>
+            This is a website that detects speech and converts it into text
+            using JavaScript. However, it only works in certain web browsers
+            such as Chrome, Edge, and Safari. Also, I added a voice command to
+            open up LinkedIn.
+          </p>
+          <p>
+            <strong>Skills:</strong> Vanilla JavaScript, ES6, HTML5, CSS3
+            <br />
+            <strong>Tools:</strong> Git, GitHub, Visual Studio <br />
+          </p>
+          <a
+            href="https://jsthomas1288.github.io/speech-detection/"
+            target="_blank"
+          >
+            <button>LIVE PAGE</button>
+          </a>
+        </div>
+
+        <div class="repo-gallery">
+          <a
+            href="https://jsthomas1288.github.io/github-repo-gallery/"
+            target="_blank"
+          >
+            <img src="img/GitHub-Repo-Gallery.png" />
+          </a>
+          <h3>GitHub Repo Gallery</h3>
+          <p>
+            This is a gallery using an API from GitHub to display and describe
+            all of my public repos that are on GitHub. It also contains a search
+            bar to filter through the repos.
+          </p>
+          <p>
+            <strong>Skills:</strong> Vanilla JavaScript, APIs, Manipulate the
+            DOM, HTML5
+            <br />
+            <strong>Tools:</strong> Git, GitHub, Visual Studio <br />
+          </p>
+          <a
+            href="https://jsthomas1288.github.io/github-repo-gallery/"
+            target="_blank"
+          >
+            <button>LIVE PAGE</button>
+          </a>
+        </div>
+
+        <div class="guess-word">
+          <a
+            href="https://jsthomas1288.github.io/guess-the-word/"
+            target="_blank"
+          >
+            <img src="img/Guess-the-Word.png" />
+          </a>
+          <h3>Guess the Word</h3>
+          <p>
+            This is a fun and interactive word guessing game where you have 8
+            tries to guess what the word is.
+          </p>
+          <p>
+            <strong>Skills:</strong> Vanilla JavaScript, APIs, Manipulate the
+            DOM, HTML5
+            <br />
+            <strong>Tools:</strong> Git, GitHub, Visual Studio <br />
+          </p>
+          <a
+            href="https://jsthomas1288.github.io/guess-the-word/"
+            target="_blank"
+          >
+            <button>LIVE PAGE</button>
+          </a>
+        </div>
+
+        <div class="unplugged">
+          <a
+            href="https://jsthomas1288.github.io/unplugged-retreat-2020/"
+            target="_blank"
+          >
+            <img src="img/Unplugged-Retreat.png" />
+          </a>
+          <h3>Unplugged Retreat</h3>
+          <p>
+            This is a three-page responsive website I created from scratch based
+            on the design that was given.
+          </p>
+          <p>
+            <strong>Skills:</strong> CSS3, HTML5, Flexbox, Media Queries,
+            Responsive Typography
+            <br />
+            <strong>Tools:</strong> Git, GitHub, Visual Studio, Adobe Photoshop
+            <br />
+          </p>
+          <a
+            href="https://jsthomas1288.github.io/unplugged-retreat-2020/"
+            target="_blank"
+          >
+            <button>LIVE PAGE</button>
+          </a>
+        </div>
+      </div>
+
       <div id="skills"></div>
-      <div id="projects"></div>
+      <div id="about"></div>
     </div>
 
-    <div class="footer">
+    <footer>
       <div id="contact"></div>
-    </div>
+    </footer>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <!-- <script>
