@@ -109,7 +109,6 @@ nav ul {
   align-items: center;
   padding: 0;
   margin: 0;
-  width: 100%;
   text-decoration: none;
   list-style: none;
   font-family: "Alike", sans-serif;
@@ -141,19 +140,23 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Alike", sans-serif;
+  font-family: "Alike", serif;
+  font-weight: 500;
 }
 
 .intro h1 {
   padding: 30px 0;
   margin: 0;
+  width: 75%;
+  text-align: center;
 }
 
-.intro p {
+.intro h2 {
   padding: 0 30px 40px;
   margin: 0;
   text-align: center;
-  width: 275px;
+  font-size: 18px;
+  width: 75%;
 }
 
 #projects,
@@ -176,6 +179,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
 img {
@@ -185,8 +190,7 @@ img {
 }
 
 #projects h2,
-#projects p,
-#projects button {
+#projects p {
   margin: 0 30px 40px;
   text-align: center;
 }
@@ -204,15 +208,15 @@ img {
 }
 
 .button {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  padding: 0 30px 40px;
 }
 
 button {
-  background-color: #152a3e;
-  color: white;
+  background: #152a3e;
   border-radius: 20px;
   padding: 5px 10px;
   height: 45px;
@@ -220,14 +224,18 @@ button {
   width: 180px;
 }
 
+#skills {
+  padding: 60px 0;
+}
+
 #skills h1 {
-  padding: 20px 0 40px;
+  padding: 0 0 10px;
   margin: 0;
 }
 
 #skills h2 {
   margin: 0;
-  padding: 0 0 20px;
+  padding: 30px 0 20px;
 }
 
 #skills ul {
@@ -245,13 +253,18 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin: 0 0 20px;
   padding: 10px 0;
   background-color: #e9b14c;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
+}
+
+#about img {
+  padding: 20px 0;
 }
 
 #about h1 {
@@ -261,14 +274,75 @@ button {
 
 #about h2 {
   margin: 0;
-  padding: 0 30px 30px;
+  padding: 0 0 30px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #about p {
   margin: 0;
   padding: 20px 30px 0;
+}
+
+#contact h1 {
+  margin: 0;
+  padding: 60px 0 40px;
+}
+
+#hire h2 {
+  margin: 0;
+  padding: 0 0 30px;
+}
+
+#hire a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-decoration: none;
+  list-style: none;
+  color: lightgray;
+}
+
+#follow h2,
+#location h2 {
+  margin: 0;
+  padding: 40px 0 30px;
+}
+
+.emblems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#follow p {
+  margin: 0;
+  padding: 0 15px;
+}
+
+#follow p a i {
+  color: lightgray;
+  font-size: 32px;
+}
+
+#location,
+#copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#location p {
+  margin: 0;
+}
+
+#copyright p {
+  margin: 0;
+  padding: 40px 0;
+  font-size: 14px;
 }
 
 /* ==========================================================================
