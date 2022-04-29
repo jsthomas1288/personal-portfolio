@@ -117,6 +117,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 #themes {
@@ -126,6 +127,7 @@ nav ul li a {
   height: 30px;
   font-size: 14px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .intro {
@@ -197,6 +199,7 @@ img {
 
 #projects h2 {
   margin: 0 0 40px;
+  font-weight: 500;
 }
 
 #projects p {
@@ -339,10 +342,181 @@ button {
   margin: 0;
 }
 
+#copyright {
+  padding: 40px 0;
+}
+
 #copyright p {
   margin: 0;
-  padding: 40px 0;
   font-size: 14px;
+}
+
+/******************************** Base Styles for Tablet Devices ******************************/
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  nav {
+    padding: 80px 50px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #themes {
+    font-size: 16px;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .intro h2 {
+    font-size: 24px;
+    padding: 80px 40px;
+  }
+
+  #projects {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 120px 0 0;
+  }
+
+  #projects h1 {
+    padding-bottom: 80px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .sticky-notes,
+  .speech-detection,
+  .repo-gallery,
+  .guess-word,
+  .unplugged {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 45%;
+  }
+
+  img a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #projects p {
+    margin: 0 15px 30px;
+    text-align: left;
+  }
+
+  .description {
+    height: 150px;
+  }
+
+  .button {
+    padding: 0 30px 80px;
+  }
+
+  #skills h2 {
+    padding: 30px 0;
+  }
+
+  #skills ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 0 10px;
+  }
+
+  #skills ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 35%;
+    margin: 0 15px 20px;
+  }
+
+  #about {
+    padding: 60px 40px 120px;
+  }
+
+  #about img {
+    width: 50%;
+  }
+
+  #about h1 {
+    padding: 60px 0 80px;
+  }
+
+  #about h2 {
+    text-align: left;
+    padding: 0 30px 40px;
+  }
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  #contact h1 {
+    padding: 120px 0 80px;
+    width: 100%;
+  }
+
+  #hire h2 {
+    padding: 0 0 30px;
+  }
+
+  #follow h2 {
+    padding: 0 0 40px;
+  }
+
+  #location h2 {
+    padding: 0 0 40px;
+  }
+
+  #location p {
+    font-size: 18px;
+  }
+
+  #hire,
+  #follow,
+  #location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 33%;
+  }
+
+  #follow p {
+    padding: 0 20px;
+  }
+
+  #copyright {
+    width: 100%;
+    padding: 80px 0;
+  }
+
+  #copyright p {
+    font-size: 16px;
+  }
+}
+
+/******************************** Base Styles for Tablet Devices ******************************/
+@media only screen and (min-width: 1200px) {
 }
 
 /* ==========================================================================
