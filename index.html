@@ -32,286 +32,298 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <header id="header">
-    <nav>
-      <ul>
-        <li><a id="nav" href="#projects">Projects</a></li>
-        <li><a id="nav" href="#skills">Skills</a></li>
-        <li><a id="nav" href="#about">About</a></li>
-        <li><a id="nav" href="#contact">Contact</a></li>
-
-        <select name="themes" id="themes">
-          <option value="dark" class="dark">Dark</option>
-          <option value="light" class="light">Light</option>
-        </select>
-      </ul>
-    </nav>
-
-    <div class="intro">
-      <h1>Hello, I'm Jacob Thomas! 👋</h1>
-      <h2>
-        I'm a creative and innovative Front End Developer located in the Austin,
-        Texas Metro Area.
-      </h2>
-    </div>
-  </header>
-
   <body>
-    <div class="wrapper">
-      <div id="projects">
-        <div id="project-wrapper">
-          <h1>Projects</h1>
-          <div class="sticky-notes">
-            <a href="https://qsibvj.csb.app/" target="_blank">
-              <img src="img/Sticky-Note-UI.png" />
-            </a>
-            <h2>Sticky Note UI</h2>
-            <p class="description">
-              This is a simple sticky note app with a way to filter through the
-              notes using React. I also added a light theme and a dark theme.
-            </p>
-            <p class="skills">
-              <strong>Skills:</strong> React, ES6, JSX, Components
-            </p>
-            <p><strong>Tools:</strong> CodeSandbox, GitHub, Props, State</p>
-            <div class="button">
-              <button>
+    <header id="header">
+      <nav>
+        <ul>
+          <li><a class="nav" href="#projects">Projects</a></li>
+          <li><a class="nav" href="#skills">Skills</a></li>
+          <li><a class="nav" href="#about">About</a></li>
+          <li><a class="nav" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="select">
+          <select name="themes" id="themes">
+            <option value="dark" class="dark">Dark</option>
+            <option value="light" class="light">Light</option>
+          </select>
+        </div>
+      </nav>
+
+      <div class="intro">
+        <h1>Hello, I'm Jacob Thomas! 👋</h1>
+        <h2>
+          I'm a creative and innovative Front End Developer located in the
+          Austin, Texas Metro Area.
+        </h2>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div id="projects">
+          <div id="project-wrapper">
+            <h1>Projects</h1>
+            <div class="sticky-notes">
+              <a href="https://qsibvj.csb.app/" target="_blank">
+                <img src="img/Sticky-Note-UI.png" alt="sticky note website" />
+              </a>
+              <h2>Sticky Note UI</h2>
+              <p class="description">
+                This is a simple sticky note app with a way to filter through
+                the notes using React. I also added a light theme and a dark
+                theme.
+              </p>
+              <p class="skills">
+                <strong>Skills:</strong> React, ES6, JSX, Components
+              </p>
+              <p><strong>Tools:</strong> CodeSandbox, GitHub, Props, State</p>
+              <div class="button">
                 <a href="https://qsibvj.csb.app/" target="_blank">
                   LIVE PAGE
                 </a>
-              </button>
+              </div>
             </div>
-          </div>
 
-          <div class="speech-detection">
-            <a
-              href="https://jsthomas1288.github.io/speech-detection/"
-              target="_blank"
-            >
-              <img src="img/Speech-Detection.png" />
-            </a>
-            <h2>Speech Detection</h2>
-            <p class="description">
-              This is a website that detects speech and converts it into text
-              using JavaScript. However, it only works in Chrome, Edge, and
-              Safari web browsers.
-            </p>
-            <p class="skills">
-              <strong>Skills:</strong> JavaScript, ES6, HTML, CSS
-            </p>
-            <p><strong>Tools:</strong> Git, GitHub, Visual Studio</p>
-            <div class="button">
-              <button>
+            <div class="speech-detection">
+              <a
+                href="https://jsthomas1288.github.io/speech-detection/"
+                target="_blank"
+              >
+                <img
+                  src="img/Speech-Detection.png"
+                  alt="speech detection website"
+                />
+              </a>
+              <h2>Speech Detection</h2>
+              <p class="description">
+                This is a website that detects speech and converts it into text
+                using JavaScript. However, it only works in Chrome, Edge, and
+                Safari web browsers.
+              </p>
+              <p class="skills">
+                <strong>Skills:</strong> JavaScript, ES6, HTML, CSS
+              </p>
+              <p><strong>Tools:</strong> Git, GitHub, Visual Studio</p>
+              <div class="button">
                 <a
                   href="https://jsthomas1288.github.io/speech-detection/"
                   target="_blank"
                 >
                   LIVE PAGE
                 </a>
-              </button>
+              </div>
             </div>
-          </div>
 
-          <div class="repo-gallery">
-            <a
-              href="https://jsthomas1288.github.io/github-repo-gallery/"
-              target="_blank"
-            >
-              <img src="img/GitHub-Repo-Gallery.png" />
-            </a>
-            <h2>GitHub Repo Gallery</h2>
-            <p class="description">
-              This is a gallery using an API from GitHub to display and describe
-              all of my public repos that are on GitHub. It also contains a
-              search bar to filter through the repos.
-            </p>
-            <p class="skills"><strong>Skills:</strong> JavaScript, HTML</p>
-            <p><strong>Tools:</strong> Git, GitHub, Visual Studio, REST API</p>
-            <div class="button">
-              <button>
+            <div class="repo-gallery">
+              <a
+                href="https://jsthomas1288.github.io/github-repo-gallery/"
+                target="_blank"
+              >
+                <img
+                  src="img/GitHub-Repo-Gallery.png"
+                  alt="github repo gallery website"
+                />
+              </a>
+              <h2>GitHub Repo Gallery</h2>
+              <p class="description">
+                This is a gallery using an API from GitHub to display and
+                describe all of my public repos that are on GitHub. It also
+                contains a search bar to filter through the repos.
+              </p>
+              <p class="skills"><strong>Skills:</strong> JavaScript, HTML</p>
+              <p>
+                <strong>Tools:</strong> Git, GitHub, Visual Studio, REST API
+              </p>
+              <div class="button">
                 <a
                   href="https://jsthomas1288.github.io/github-repo-gallery/"
                   target="_blank"
                 >
                   LIVE PAGE
                 </a>
-              </button>
+              </div>
             </div>
-          </div>
 
-          <div class="guess-word">
-            <a
-              href="https://jsthomas1288.github.io/guess-the-word/"
-              target="_blank"
-            >
-              <img src="img/Guess-the-Word.png" />
-            </a>
-            <h2>Guess the Word</h2>
-            <p class="description">
-              This is a fun and interactive word guessing game where you have 8
-              tries to guess what the word is.
-            </p>
-            <p class="skills"><strong>Skills:</strong> JavaScript, HTML</p>
-            <p><strong>Tools:</strong> Git, GitHub, Visual Studio, REST API</p>
-            <div class="button">
-              <button>
+            <div class="guess-word">
+              <a
+                href="https://jsthomas1288.github.io/guess-the-word/"
+                target="_blank"
+              >
+                <img
+                  src="img/Guess-the-Word.png"
+                  alt="guess the word website"
+                />
+              </a>
+              <h2>Guess the Word</h2>
+              <p class="description">
+                This is a fun and interactive word guessing game where you have
+                8 tries to guess what the word is.
+              </p>
+              <p class="skills"><strong>Skills:</strong> JavaScript, HTML</p>
+              <p>
+                <strong>Tools:</strong> Git, GitHub, Visual Studio, REST API
+              </p>
+              <div class="button">
                 <a
                   href="https://jsthomas1288.github.io/guess-the-word/"
                   target="_blank"
                 >
                   LIVE PAGE
                 </a>
-              </button>
+              </div>
             </div>
-          </div>
 
-          <div class="unplugged">
-            <a
-              href="https://jsthomas1288.github.io/unplugged-retreat-2020/"
-              target="_blank"
-            >
-              <img src="img/Unplugged-Retreat.png" />
-            </a>
-            <h2>Unplugged Retreat</h2>
-            <p class="description">
-              This is a three-page responsive website I created from scratch
-              based on the design that was given.
-            </p>
-            <p class="skills">
-              <strong>Skills:</strong> CSS, HTML, Flexbox, Media Queries
-            </p>
-            <p>
-              <strong>Tools:</strong> GitHub Pages, Visual Studio, Photoshop
-            </p>
-            <div class="button">
-              <button>
+            <div class="unplugged">
+              <a
+                href="https://jsthomas1288.github.io/unplugged-retreat-2020/"
+                target="_blank"
+              >
+                <img
+                  src="img/Unplugged-Retreat.png"
+                  alt="unplugged retreat website"
+                />
+              </a>
+              <h2>Unplugged Retreat</h2>
+              <p class="description">
+                This is a three-page responsive website I created from scratch
+                based on the design that was given.
+              </p>
+              <p class="skills">
+                <strong>Skills:</strong> CSS, HTML, Flexbox, Media Queries
+              </p>
+              <p>
+                <strong>Tools:</strong> GitHub Pages, Visual Studio, Photoshop
+              </p>
+              <div class="button">
                 <a
                   href="https://jsthomas1288.github.io/unplugged-retreat-2020/"
                   target="_blank"
                 >
                   LIVE PAGE
                 </a>
-              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="skills">
+          <h1>Skills</h1>
+          <h2>Developer Skills</h2>
+          <ul>
+            <li>HTML and CSS</li>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>Version Control</li>
+            <li>APIs</li>
+            <li>Responsive Web Development</li>
+          </ul>
+          <h2>Tech Stack</h2>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Visual Studio</li>
+            <li>CodeSandbox</li>
+            <li>Photoshop</li>
+          </ul>
+        </div>
+
+        <div id="about">
+          <div id="about-wrapper">
+            <img src="img/profile-pic.png" alt="profile picture" />
+            <div id="text">
+              <h1>Hey! I'm Jacob Thomas.</h1>
+              <h2>
+                I am a Mechanical Engineer turned Project Engineer turned Front
+                End Developer with the desire to help those around me.
+              </h2>
+
+              <p>
+                Software development is appealing to me for the same reason that
+                I wanted to be a Mechanical Engineer; I have an active
+                imagination and I enjoy creating and innovating things that help
+                people.
+              </p>
+
+              <p>
+                Also, the work environment associated with software development
+                appears to allow flexibility, which is very important to me
+                because I want to be able to do things like spend time with my
+                family.
+              </p>
+
+              <p>
+                Lastly, I believe that software development is a place where I
+                can be a part of a team that has each other's back and pushes
+                each other to be the best that they can be.
+              </p>
+
+              <p>
+                In my spare time, you can find me spending quality time with
+                family, serving at church, playing soccer, exercising, or
+                watching How I Met Your Mother for the 10th time...
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="skills">
-        <h1>Skills</h1>
-        <h2>Developer Skills</h2>
-        <ul>
-          <li>HTML and CSS</li>
-          <li>React</li>
-          <li>JavaScript</li>
-          <li>Version Control</li>
-          <li>APIs</li>
-          <li>Responsive Web Development</li>
-        </ul>
-        <h2>Tech Stack</h2>
-        <ul>
-          <li>Git</li>
-          <li>GitHub</li>
-          <li>Visual Studio</li>
-          <li>CodeSandbox</li>
-          <li>Photoshop</li>
-        </ul>
-      </div>
+      <footer id="contact">
+        <h1>Let's Connect</h1>
 
-      <div id="about">
-        <div id="about-wrapper">
-          <img src="img/profile-pic.png" />
-          <div id="text">
-            <h1>Hey! I'm Jacob Thomas.</h1>
-            <h2>
-              I am a Mechanical Engineer turned Project Engineer turned Front
-              End Developer with the desire to help those around me.
-            </h2>
+        <div id="hire">
+          <h2>Hire me</h2>
+          <a id="phone" href="tel:+14099202703">(409) 920-2703</a>
+          <a id="email" href="mailto:jsthomas1288@gmail.com"
+            >jsthomas1288@gmail.com</a
+          >
+        </div>
 
+        <div id="follow">
+          <h2>Follow me</h2>
+          <div class="emblems">
             <p>
-              Software development is appealing to me for the same reason that I
-              wanted to be a Mechanical Engineer; I have an active imagination
-              and I enjoy creating and innovating things that help people.
+              <a
+                href="https://www.linkedin.com/in/jacob-thomas-54771b149/"
+                target="_blank"
+              >
+                <i id="linkedin" class="fa-brands fa-linkedin"></i>
+              </a>
             </p>
 
             <p>
-              Also, the work environment associated with software development
-              appears to allow flexibility, which is very important to me
-              because I want to be able to do things like spend time with my
-              family.
+              <a href="https://github.com/jsthomas1288/" target="_blank">
+                <i id="github" class="fa-brands fa-github"></i>
+              </a>
             </p>
 
             <p>
-              Lastly, I believe that software development is a place where I can
-              be a part of a team that has each other's back and pushes each
-              other to be the best that they can be.
-            </p>
-
-            <p>
-              In my spare time, you can find me spending quality time with
-              family, serving at church, playing soccer, exercising, or watching
-              How I Met Your Mother for the 10th time...
+              <a href="https://codesandbox.io/u/jsthomas1288" target="_blank">
+                <i id="codesandbox" class="fa-regular fa-square-full"></i>
+              </a>
             </p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <footer id="contact">
-      <h1>Let's Connect</h1>
-
-      <div id="hire">
-        <h2>Hire me</h2>
-        <a id="phone" href="tel:+14099202703">(409) 920-2703</a>
-        <a id="email" href="mailto:jsthomas1288@gmail.com"
-          >jsthomas1288@gmail.com</a
-        >
-      </div>
-
-      <div id="follow">
-        <h2>Follow me</h2>
-        <div class="emblems">
-          <p>
-            <a
-              href="https://www.linkedin.com/in/jacob-thomas-54771b149/"
-              target="_blank"
-            >
-              <i id="emblems" class="fa-brands fa-linkedin"></i>
-            </a>
-          </p>
-
-          <p>
-            <a href="https://github.com/jsthomas1288/" target="_blank">
-              <i id="emblems" class="fa-brands fa-github"></i>
-            </a>
-          </p>
-
-          <p>
-            <a href="https://codesandbox.io/u/jsthomas1288" target="_blank">
-              <i id="emblems" class="fa-regular fa-square-full"></i>
-            </a>
-          </p>
+        <div id="location">
+          <h2>Meet me</h2>
+          <p>Located near Austin, Texas!</p>
         </div>
-      </div>
 
-      <div id="location">
-        <h2>Meet me</h2>
-        <p>Located near Austin, Texas!</p>
-      </div>
+        <div id="copyright">
+          <p>Copyright 2022 | Jacob Thomas</p>
+        </div>
+      </footer>
 
-      <div id="copyright">
-        <p>Copyright 2022 | Jacob Thomas</p>
-      </div>
-    </footer>
+      <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="js/plugins.js"></script>
 
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <!-- <script>
+      <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+      <!-- <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+    </main>
   </body>
 </html>

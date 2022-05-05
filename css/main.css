@@ -99,14 +99,18 @@ footer {
 }
 
 nav {
-  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 30px 0;
 }
 
 nav ul {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  flex-flow: row wrap;
+  width: 75%;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -117,7 +121,6 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   font-size: 14px;
-  text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -127,14 +130,17 @@ nav ul li a:hover {
   border-radius: 20px;
 }
 
+.select {
+  margin: 0;
+}
+
 #themes {
   background-color: #eeefda;
   border-radius: 20px;
-  padding: 3px;
+  padding: 1px 3px;
   height: 30px;
   font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 #themes:hover {
@@ -253,7 +259,7 @@ img {
   width: 100%;
 }
 
-button {
+.button a {
   background: #152a3e;
   border-radius: 20px;
   border: none;
@@ -263,15 +269,14 @@ button {
   width: 180px;
 }
 
-#projects button a {
+#projects .button a {
   color: white;
   border-radius: 20px;
   border: none;
   height: 35px;
 }
 
-button:hover,
-#projects button a:hover {
+#projects .button a:hover {
   cursor: pointer;
   background-color: #b4c7d9;
   color: #000;
@@ -430,7 +435,7 @@ button:hover,
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   nav {
-    padding: 80px 50px;
+    padding: 80px 0;
   }
 
   nav ul li a {
@@ -589,7 +594,7 @@ button:hover,
 /******************************** Base Styles for Desktop Devices ******************************/
 @media only screen and (min-width: 1200px) {
   nav {
-    padding: 80px 100px;
+    padding: 80px 0;
   }
 
   nav ul {
@@ -774,14 +779,14 @@ button:hover,
 
 /**************************************** Light Mode ******************************************/
 .light #header,
-.light #nav,
+.light .nav,
 .light #skills,
 .light #contact {
   background-color: #cac691;
   color: #152a3e;
 }
 
-.light #nav:hover {
+.light .nav:hover {
   cursor: pointer;
   background-color: #152a3e;
   color: white;
@@ -803,7 +808,9 @@ button:hover,
 
 .light #phone,
 .light #email,
-.light #emblems {
+.light #linkedin,
+.light #github,
+.light #codesandbox {
   color: #152a3e;
 }
 
