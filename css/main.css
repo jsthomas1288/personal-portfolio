@@ -95,7 +95,7 @@ nav ul li a,
 #skills,
 footer {
   background-color: #152a3e;
-  color: lightgray;
+  color: #eeefda;
 }
 
 nav {
@@ -120,14 +120,27 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-#themes {
+nav ul li a:hover {
+  cursor: pointer;
   background-color: #cac691;
+  color: #152a3e;
+  border-radius: 20px;
+}
+
+#themes {
+  background-color: #eeefda;
   border-radius: 20px;
   padding: 3px;
   height: 30px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#themes:hover {
+  cursor: pointer;
+  background-color: #cac691;
+  color: #152a3e;
 }
 
 .intro {
@@ -167,7 +180,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  background-color: #cac691;
+  background-color: #eeefda;
   color: #152a3e;
   margin: 0;
   padding: 60px 0 60px;
@@ -204,7 +217,6 @@ h2 {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
 }
 
 img {
@@ -244,10 +256,25 @@ img {
 button {
   background: #152a3e;
   border-radius: 20px;
+  border: none;
   padding: 5px 10px;
   height: 45px;
   font-size: 18px;
   width: 180px;
+}
+
+#projects button a {
+  color: white;
+  border-radius: 20px;
+  border: none;
+  height: 35px;
+}
+
+button:hover,
+#projects button a:hover {
+  cursor: pointer;
+  background-color: #b4c7d9;
+  color: #000;
 }
 
 #skills {
@@ -600,6 +627,7 @@ button {
   #projects h1 {
     padding-bottom: 80px;
     margin: 0;
+    font-size: 40px;
   }
 
   .sticky-notes,
@@ -633,6 +661,10 @@ button {
     align-items: center;
     flex-flow: row wrap;
     padding: 120px 0;
+  }
+
+  #skills h1 {
+    font-size: 40px;
   }
 
   #skills ul {
@@ -738,6 +770,41 @@ button {
   #copyright p {
     font-size: 18px;
   }
+}
+
+/**************************************** Light Mode ******************************************/
+.light #header,
+.light #nav,
+.light #skills,
+.light #contact {
+  background-color: #cac691;
+  color: #152a3e;
+}
+
+.light #nav:hover {
+  cursor: pointer;
+  background-color: #152a3e;
+  color: white;
+  border-radius: 20px;
+}
+
+.light #themes:hover {
+  cursor: pointer;
+  background-color: #152a3e;
+  color: white;
+}
+
+.light #themes,
+.light #projects,
+.light #about {
+  background-color: #f7e8e8;
+  color: #152a3e;
+}
+
+.light #phone,
+.light #email,
+.light #emblems {
+  color: #152a3e;
 }
 
 /* ==========================================================================

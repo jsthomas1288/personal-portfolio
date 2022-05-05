@@ -27,18 +27,18 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="js/main.js" defer></script>
+
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <header>
+  <header id="header">
     <nav>
       <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li>
-          <span><a href="#contact">Contact</a></span>
-        </li>
+        <li><a id="nav" href="#projects">Projects</a></li>
+        <li><a id="nav" href="#skills">Skills</a></li>
+        <li><a id="nav" href="#about">About</a></li>
+        <li><a id="nav" href="#contact">Contact</a></li>
 
         <select name="themes" id="themes">
           <option value="dark" class="dark">Dark</option>
@@ -262,8 +262,10 @@
 
       <div id="hire">
         <h2>Hire me</h2>
-        <a href="tel:+14099202703">(409) 920-2703</a>
-        <a href="mailto:jsthomas1288@gmail.com">jsthomas1288@gmail.com</a>
+        <a id="phone" href="tel:+14099202703">(409) 920-2703</a>
+        <a id="email" href="mailto:jsthomas1288@gmail.com"
+          >jsthomas1288@gmail.com</a
+        >
       </div>
 
       <div id="follow">
@@ -274,19 +276,19 @@
               href="https://www.linkedin.com/in/jacob-thomas-54771b149/"
               target="_blank"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i id="emblems" class="fa-brands fa-linkedin"></i>
             </a>
           </p>
 
           <p>
             <a href="https://github.com/jsthomas1288/" target="_blank">
-              <i class="fa-brands fa-github"></i>
+              <i id="emblems" class="fa-brands fa-github"></i>
             </a>
           </p>
 
           <p>
             <a href="https://codesandbox.io/u/jsthomas1288" target="_blank">
-              <i class="fa-regular fa-square-full"></i>
+              <i id="emblems" class="fa-regular fa-square-full"></i>
             </a>
           </p>
         </div>
@@ -304,7 +306,6 @@
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <!-- <script>
