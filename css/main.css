@@ -211,6 +211,7 @@ textarea {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  cursor: default
 }
 
 /* Grow */
@@ -343,6 +344,76 @@ nav ul li a:hover {
   color: #152a3e;
   border-radius: 20px;
   transform: scale(1.5);
+}
+
+.select,
+.hide .switch-container,
+.hide .switch-container p,
+.hide .switch-container input,
+.hide .switch,
+.hide .ball,
+.hide .ball.move-right,
+#toggle {
+  display: none;
+}
+
+#menu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  background-color: #152a3e;
+  color: white;
+  padding: 4px 0 0 0;
+}
+
+#menu i {
+  font-size: 16px;
+}
+
+.switch-container {
+  text-align: center;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.switch-container p {
+  padding: 0 1em;
+  font-size: 14px;
+  font-family: "Alike", sans-serif;
+}
+
+.switch-container input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.switch {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 34px;
+}
+
+.ball {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 5px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-out;
+}
+
+.ball.move-right {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
 }
 
 .select {
@@ -615,7 +686,7 @@ img {
   flex-flow: column;
   text-decoration: none;
   list-style: none;
-  color: #eeefda;
+  color: white;
 }
 
 #follow h2,
@@ -637,7 +708,7 @@ img {
 }
 
 #follow p a i {
-  color: #eeefda;
+  color: white;
   font-size: 32px;
 }
 
@@ -670,6 +741,15 @@ img {
   }
 
   nav ul li a {
+    font-size: 20px;
+  }
+
+  #menu i {
+    font-size: 20px;
+  }
+
+  .switch-container p {
+    padding: 0 1em;
     font-size: 20px;
   }
 
@@ -744,9 +824,10 @@ img {
   }
 
   #skills ul li {
-    flex-flow: row wrap;
+    flex-flow: column;
     width: 35%;
     margin: 0 15px 20px;
+
   }
 
   #about {
@@ -835,6 +916,14 @@ img {
   nav ul li a {
     font-size: 20px;
     padding: 0 20px;
+  }
+
+  .select {
+    display: flex;
+  }
+
+  #menu {
+    display: none;
   }
 
   #themes {
@@ -1012,6 +1101,7 @@ img {
 /**************************************** Light Mode ******************************************/
 .light #header,
 .light .nav,
+.light #menu,
 .light #skills,
 .light #contact {
   background-color: #EEEFDA;
@@ -1040,6 +1130,7 @@ img {
 
 .transition #header,
 .transition .nav,
+.transition #menu,
 .transition #skills,
 .transition #contact,
 .transition #themes,
