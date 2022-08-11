@@ -9,17 +9,19 @@ const dropDown = document.querySelector(".switch-container");
 const x = document.querySelector(".fa-x");
 const getThemeString = localStorage.getItem("theme");
 
-const savedTheme = JSON.parse(getThemeString);
-if (!savedTheme.includes("light")) {
-  html.classList.remove("light");
-  ball.classList.remove("move-right");
-  switchBackground.style.backgroundColor = "white";
-  ball.style.backgroundColor = "#152a3e";
-} else {
-  html.classList.add("light");
-  ball.classList.add("move-right");
-  switchBackground.style.backgroundColor = "#152a3e";
-  ball.style.backgroundColor = "white";
+if (getThemeString !== null) {
+  const savedTheme = JSON.parse(getThemeString);
+  if (!savedTheme.includes("light")) {
+    html.classList.remove("light");
+    ball.classList.remove("move-right");
+    switchBackground.style.backgroundColor = "white";
+    ball.style.backgroundColor = "#152a3e";
+  } else {
+    html.classList.add("light");
+    ball.classList.add("move-right");
+    switchBackground.style.backgroundColor = "#152a3e";
+    ball.style.backgroundColor = "white";
+  }
 }
 
 // Desktop function to toggle between dark and light mode
