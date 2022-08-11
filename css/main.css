@@ -395,25 +395,25 @@ nav ul li a:hover {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 30px;
+  width: 50px;
+  height: 20px;
   border-radius: 34px;
 }
 
 .ball {
   position: absolute;
-  height: 20px;
-  width: 20px;
+  height: 14px;
+  width: 14px;
   left: 4px;
-  bottom: 5px;
+  bottom: 2.5px;
   border-radius: 50%;
   transition: transform 0.2s ease-out;
 }
 
 .ball.move-right {
-  -webkit-transform: translateX(34px);
-  -ms-transform: translateX(34px);
-  transform: translateX(34px);
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
 }
 
 .select {
@@ -751,6 +751,23 @@ img {
   .switch-container p {
     padding: 0 1em;
     font-size: 20px;
+  }
+
+  .switch {
+    width: 60px;
+    height: 25px;
+  }
+
+  .ball {
+    height: 16px;
+    width: 16px;
+    bottom: 4.5px;
+  }
+
+  .ball.move-right {
+    -webkit-transform: translateX(34px);
+    -ms-transform: translateX(34px);
+    transform: translateX(34px);
   }
 
   #themes {

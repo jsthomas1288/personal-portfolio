@@ -22,6 +22,9 @@ if (getThemeString !== null) {
     switchBackground.style.backgroundColor = "#152a3e";
     ball.style.backgroundColor = "white";
   }
+} else {
+  switchBackground.style.backgroundColor = "white";
+  ball.style.backgroundColor = "#152a3e";
 }
 
 // Desktop function to toggle between dark and light mode
